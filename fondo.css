@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: solid 1px white;
+  align-items: center;
+  z-index: 50;
+  background-color: #000000e0,transparent;
+  padding: 30px;
+  font-family: "Cabin";
+  
+}
+
+.imagen_logo{
+    padding-left: 60px;
+    height: 20px;
+}
+
+#mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar_links {
+    display: flex;
+    gap: 100px;
+    
+}
+
+.registro,
+.menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: white;
+}
+
+.bar {
+    width: 1px;
+    background-color: white;
+    height: 16px;
+}
+  
+.large {
+    height: 32px;
+}
+
+.active {
+    color: gray
+}
+
+.button-contain{
+    width: fit-content;
+    background-size: contain;
+}
+
+.class-button {
+    background-image: url("imagenes/Group 254.svg");
+    width: 35px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+}
+.container-main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+.container-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top -410px right 0;
+    filter: saturate(1.5);
+}
+.fondo-img-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: linear-gradient(176deg, #000000e0, #00000000);
+}
+.container-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main_busqueda {
+    align-self: end;
+    padding: 10px 20px;
+    border: 1px azure solid;
+    border-radius: 100px;
+    display: flex;
+    gap: 30px;
+    margin: 0 85px;
+    width: fit-content;
+}
+
+.main_busqueda input{
+  border: none;
+  background-color: transparent;  
+  outline: none;
+  color: rgb(255, 255, 255);
+  width: 290px
+}
+.main_busqueda input::placeholder{
+    color: azure;
+}
+
+.main-icon-search img{
+    height: 20px;
+    width: 20px;
+    object-position: bottom;
+}
+.main-text{
+    color: aliceblue;
+    margin-left: 60px;
+}
+
+.main-text h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+.main-button {
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-button button{
+    background-color: transparent;
+    padding: 15px 40px;
+    border: 1px solid azure;
+    border-radius: 100px;
+    color: azure;
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main-button button:hover{
+    background-color: black;
+}
+
+.main-button button img {
+    width: 30px;
+    height: 30px;
+    object-position: bottom;
+}
+
+.section-container{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 7% 0;
+    gap: 5%;
+}
+
+.section-images {
+    display: flex;
+    overflow-y: overlay;
+    min-width: 50%;
+    
+}
+.section-images  div{
+    position: relative;
+}
+.section-images  div img{
+    height: 440px;
+    padding-right: 10px;
+    position: relative;
+   
+}
+.section-images div.container-text-gallery,
+.img-container-gallery div .container-text-gallery{
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.section-images div.container-text-gallery2,
+.img-container-gallery div .container-text-gallery2{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 27%;
+}
+.section-images div.text-margin div{
+    display: flex;
+    align-items: baseline;
+}
+.section-images div.text-margin div img{
+    width: 40px;
+    height: 30px;
+}
+.section-images div.container-text-gallery .text-margin,
+.img-container-gallery div.container-text-gallery div.text-margin{
+    margin: 10% 0 30% 30%;
+}
+.section-images div.container-text-gallery2 .text-margin,
+.img-container-gallery div.container-text-gallery2 div.text-margin{
+    margin: 5% 0 0% 10%;
+}
+.section-images div.text-margin .title-gallery,
+.img-container-gallery div.text-margin p.title-gallery{
+    color: aliceblue;
+}
+.section-images div.text-margin .title-gallery2,
+.img-container-gallery div.text-margin p.title-gallery2{
+    color: gray;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+
+.Text-container-primaryseccion{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Text-container-primaryseccion{
+    margin-right: 7%;
+}
+.Text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;  
+}
+
+.paragraph-primarycontainer{
+    font-size: clamp(1.7rem, 4vw, 2rem);;
+    color: orange;
+}
+.Subtitle-primarycontainer {
+    font-size: clamp(1.5rem, 3vw, 9rem);
+    letter-spacing: 0.9px;
+}
+.Paragraph-container {
+    display: none;
+    font-size: 20px;
+    font-family: "cabin";
+}
+.img-flecha {
+    display: none;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Button1-container button,
+.Button2-container button,
+.Button3-container button{
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.Button1-container button{
+    align-items: center;
+    display: flex;
+    color: gray;
+    font-size: 18px;
+}
+.Button2-container button{
+    padding: 10px 40px;
+    border: 1px solid;
+    border-radius: 100px;
+    font-size: clamp(1rem, 1vw, 2rem);
+    display: flex;
+}
+.Button3-container button{
+    align-items: center;
+    display: flex;
+    color: orange;
+    font-size: 18px;
+}
+
+.Button3-container button img{
+    rotate: 200grad;
+    filter: invert(52%) sepia(68%) saturate(466%) hue-rotate(341deg) brightness(101%) contrast(91%);
+}
+
+.section2gallery-container{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    gap: 3%;
+}
+.Text-container-secondsection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 7%;
+    
+}
+.title-container2{
+    color: orange;
+    font-size: clamp(1.7rem,4vw,2rem);
+}
+.subtitle2-container{
+    font-size: clamp(1.5rem, 3vw, 9rem);
+    margin-bottom: 10%;
+}
+.Paragraph2-container{
+    font-size: 20px;
+    font-family: "cabin";
+}
+.img-container-gallery{
+    display: flex;
+    width: 100%;
+    overflow-y: overlay;
+    min-width: 50%;
+    justify-content: end;
+}
+.img-container-gallery div {
+    position: relative;
+}
+.img-container-gallery div img {
+    height: 440px;
+    padding-left: 10px;
+    position: relative;
+}
+.sectiondevelopments{
+    margin: 10% 0;
+}
+.textdevelopments-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+.title-container3{
+    color: orange;
+    font-size: clamp(1.7rem,4vw,2rem);
+}
+.subtitle3-container{
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    font-weight: bold;
+}
+.imagen-containe1{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    min-width: 50%;
+}
+.active-mobile-img{
+    display: none;
+}
+.imagen-containe1 div  {
+    height: 5%;
+    margin: 1%;
+    position: relative;
+}
+.imagen-containe1 div img {
+    height: 300px;
+    position: relative;
+}
+.imagen-containe1 div.container-text-gallery{
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    background-color: white;
+    width: 105%;
+    height: 35%;
+    left: -3.9px;
+}
+div.container-text-gallery div.text-margin {
+    margin: 10% 6%;;
+    width: fit-content;
+    height: fit-content;
+}
+div.text-margin p.title-gallery{
+    font-size: 20px;
+    color: gray;
+}
+div.text-margin p.subtitle-gallery{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.text-img{
+    position: absolute;
+    background: aliceblue;
+    width: 20%;
+}
+.section-services{
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    height: fit-content;
+    margin-bottom: 10%;
+}
+.img-services{
+    position: relative;
+    margin-left: 5%;
+    width: 80%;
+    overflow-x: overlay;
+}
+.img-services img{
+   height: 90%;
+}
+.img-fondo img {
+    height: 700px;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    object-fit: contain;
+}
+.section-services-text{
+    display: flex;
+    flex-direction: column;
+    margin: 7% 0;
+    width: 60%;
+}
+.imagen-logo-services{
+    display: flex;
+    align-items: center;
+}
+
+.logo-services{
+    border: 2px solid orange;
+    border-radius: 100%;
+    padding: 3%; 
+    position: relative;
+}
+.logo-services img{
+    height: 60px;
+    z-index: 3;
+    position: relative;
+    
+}
+.active-mobile-socialmedia{
+    display: none;
+}
+.img-vector img{
+    width: 100%;
+    height: 2px;
+}
+
+.container-logo{
+    left: -2%;
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    height: 102%;
+    top: -1%;
+    display: flex;
+    z-index: 2;
+}
+.Text-container-services{
+   margin-right: 10%;
+}
+.Text-container-services .title-services{ 
+    color: orange;
+    font-size: clamp(1.7rem,4vw,2rem);
+    margin-top: 6%;
+}
+.subtitle-services{
+    margin-bottom: 6%;
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    font-weight: bold;
+
+}
+.paragraph-services{
+    margin-bottom: 20%;
+    font-family: "cabin";
+    font-size: 20px;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    height: 300%;
+}
+.news {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    gap: 16px;
+    padding: 25px 50px;
+    position: absolute;
+    left: 5%;
+    top: -25%;
+    width: 89%;
+    justify-content: space-between;
+    height: 52%;
+}
+.footer-textos{
+    margin: 2% 0 1% 5%;
+    width: 50%;
+}
+  
+.news span {
+    color: orange;
+    font-size: 30px;
+    margin-top: 5%;
+}
+  
+.news p {
+    color: white;
+    font-size: clamp(0.5rem, 4vw, 6rem);
+    width: 80%;
+}
+  
+.footer-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+    font-family: 'cabin';
+    margin-top: 1%;
+}
+.footer-form span{
+    color: white;
+    margin: 0px 0px 2% 7%;
+    font-size: 20px;
+}
+.footer-form input {
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 6px 35px;
+    width: 100%;
+    height: 25%;
+}
+  
+.footer-form button {
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 30px;
+    padding: 10px 100px;
+    width: 60%;
+    height: 30%;
+    color: orange;
+    align-self: end;
+    margin: 3% 0px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+  
+.info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 19%;
+    padding-bottom: 2%;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'cabin';
+    font-size: 23px;
+}
+
+.column-footer img{
+    margin-bottom: 10%;
+    width: 80%;
+}
+.column-footer p,.column2-footer p,
+.column3-footer p,.column4-footer p{
+    margin-bottom: 4%;
+    color: #B4B7B7;
+}
+.column3-footer p.text-active {
+    color: aliceblue;
+}
+.column3-footer p.space-container{
+    margin-bottom: 30%;
+}
+.column4-footer p.otherfont{
+  font-family: 'Times New Roman', Times, serif;
+}
+.column4-footer p.second-space{
+    color: aliceblue;
+    font-size: 40px  ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-bar{
+    border: 1px solid white;
+    margin: 1% 3%;
+}
+.info .column4-footer p {
+    display: flex;
+    justify-content: end;
+}
+.info .copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    font-family: 'Cabin';
+}
+
+  
+  
+
+@media screen and (max-width: 811px){
+    .imagen_logo{
+        display: none;
+    }
+    .navbar{
+        border-bottom: none;
+    }
+    #mobile{
+        display: block;
+    }
+     
+    .registro,
+    .menu a,
+    .menu div {
+        display: none;
+    }
+
+    .container-main img{
+        
+        object-position: center;
+    }
+    .container-placeholder{
+        align-items: center;
+    }
+    
+    .container-text{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main_busqueda {
+        margin: 0%;
+        align-self: center;
+    }
+    
+    .main-text{
+        margin: 0%;
+    }
+
+    .main_busqueda input{
+        width: fit-content;
+    }
+    .section-images {
+        display: flex;
+        overflow-y: scroll;
+    }
+    .section-container{
+        flex-direction: column-reverse;
+    }
+    .Subtitle-primarycontainer{
+        margin: 3% 0;
+    }
+    .img-container-fecha {
+        display: flex;
+        flex-direction: row;
+    }
+    .Text-container{
+        align-items: start;
+        margin-right:5%;
+    }
+    .Paragraph-container{
+        display: flex;
+        font-family: "cabin";
+    }
+    .img-flecha {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .img-flecha img{
+        height: 20px;
+        width: 25px;
+    }
+    .Button1-container{
+        display: none;
+    }
+    .Button2-container button{
+        padding: 10% 0;
+        border: none;
+        color: orange;
+    }
+    .Button3-container{
+        display: none;
+    }
+    .section2gallery-container{
+        flex-direction: column;
+        padding: 7% 0;
+    }
+    .title-container2{
+        margin-bottom: 2%;
+    }
+    .img-container-gallery {
+      display: flex;
+      overflow-y: scroll;
+    }
+    .Text-container-secondsection{
+        margin: 0;
+    }
+    .Text-secondsection{
+        margin-top: 5%;
+    }
+    .sectiondevelopments{
+        margin-bottom: 0;
+    }
+    .textdevelopments-container{
+        align-items: start;
+    }
+    .imagen-containe1{
+        display: none;
+    }
+    .active-mobile-img{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .title-container3{
+        margin-bottom: 3%;
+    }
+    .container-property{
+        margin: 5% 0 5% 5%;
+    }
+    .container-property .title-property{
+        color: gray;
+        font-size: 25px;
+        margin-bottom: 1%;
+    }
+    .container-property .subtitle-property{
+        font-size: 50px;
+    }
+    .img-property img{
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+        object-position: bottom;
+    }
+    .section-services{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .section-services-text {
+        width: auto;
+    }
+    .imagen-logo-services{
+        margin-right: 10%;
+    }
+    .paragraph-services{
+        margin: 1%;
+    }
+    .img-services{
+        margin: 0;
+    }
+    .img-services img {
+        width: 80%;
+        position: relative;
+    }
+    .mobile-img-new{
+        width: 100%;
+        height: fit-content;
+        margin-top: 5%;
+    }
+    .mobile-img-new img{
+        width: 100%;
+    }
+
+    .img-fondo img{
+        display: none;
+    } 
+    .active-mobile-socialmedia{
+        display: flex;
+    }
+    .social-media{
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        margin-left: 2%;
+    }
+    .social-media img{
+        width: 13PX;
+        height: 20px;
+        
+    }
+    .social-media button{
+        background-color: transparent;
+        border: none;
+        margin-right: 5%;
+    }
+    footer{
+        display: none;
+    }
+    
+}
